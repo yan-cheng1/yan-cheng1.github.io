@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "ES5", /* 指定 ECMAScript 目标版本：'ES3'、'ES5'（默认）、'ES2015'、'ES2016'、'ES2017'、'ES2018'、'ES2019'、'ES2020' 或 'ESNEXT'。 */
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ], /* 指定要包含在编译中的库文件。 */
+        "allowJs": true, /* 允许编译 javascript 文件。打开会导致check到nvm中的一些js文件 */
+        "skipLibCheck": true, /* 跳过声明文件的类型检查。 */
+        "esModuleInterop": true, /* 通过为所有导入创建命名空间对象，在 CommonJS 和 ES 模块之间启用发射互操作性。 暗示“allowSyntheticDefaultImports”。 */
+        "allowSyntheticDefaultImports": true, /* 允许从没有默认导出的模块中默认导入。 这不会影响代码发出，只是类型检查。 */
+        "strict": true, /* 启用所有严格的类型检查选项。 在开发中，建议将stricet这类选项都开启。 */
+        "forceConsistentCasingInFileNames": true, /* 禁止对同一文件的大小写不一致的引用。 */
+        "noFallthroughCasesInSwitch": true, /* 在 switch 语句中报告失败情况的错误。 */
+        "module": "esnext", /* 指定模块代码生成：“none”、“commonjs”、“amd”、“system”、“umd”、“es2015”、“es2020”或“ESNext”。 */
+        "moduleResolution": "node", /* 指定模块解析策略：'node' (Node.js) 或 'classic' (TypeScript pre-1.6)。 */
+        "resolveJsonModule": true, //允许导入扩展名为“.json”的模块
+        "isolatedModules": true, //将每个文件作为单独的模块（与“ts.transpileModule”类似）。
+        // "noEmit": true, /* 不发出输出（不生成编译后的文件）。 */
+        "jsx": "react-jsx", /* 指定 JSX 代码生成：'preserve'、'react-native' 或 'react'。 */
+        "noEmit": true,
+        "noImplicitAny": false,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ], //包含的文件
+}
