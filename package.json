@@ -1,9 +1,7 @@
 {
-  "homepage": "https://github.com/yan-cheng1/yan-cheng1.github.io.git",
   "name": "yan-cheng1.github.io",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:yan-cheng1/yan-cheng1.github.io.git",
   "author": "yancheng <1925075019@qq.com>",
   "license": "MIT",
   "scripts": {
