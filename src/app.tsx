@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { ConfigProvider } from 'antd'
+import Layout from '@/layout/index'
+import { themeColorObject } from './styles/themeColor'
 
-class App extends Component {
-    render() {
-        return (
-            <div>my-project!!!!!</div>
-        );
-    }
+function App() {
+  return (
+    <ConfigProvider theme={themeColorObject}>
+      <Layout />
+    </ConfigProvider>
+  )
 }
 
-export default App;
+export default App
