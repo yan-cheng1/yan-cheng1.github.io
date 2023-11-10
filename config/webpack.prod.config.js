@@ -24,11 +24,15 @@ module.exports = merge(common, {
     minimize: true,
     minimizer: [
       new TerserPlugin({
+        minify: TerserPlugin.uglifyJsMinify,
         extractComments: false,
         terserOptions: {
           compress: { pure_funcs: ['console.log'] }
         }
       })
-    ]
+    ],
+    splitChunks: {
+      chunks: 'all'
+    }
   }
 })
