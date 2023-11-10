@@ -12,24 +12,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
-              modules: {
-                localIdentName: '[name]-[local]-[hash:base64:8]'
-              }
+              modules: true
             }
           },
           {
             loader: 'postcss-loader'
           },
+
           {
             loader: 'sass-loader'
           }
@@ -48,7 +43,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles/[name].[contenthash].css'
+    })
+  ],
   resolve: {
     extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
     alias: {
