@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 import { UserOutlined } from '@ant-design/icons'
 
 import style from './sider.module.scss'
@@ -8,9 +9,8 @@ const Sider: FC = () => {
     <div className={style.sider_bar}>
       <div className="user_avator"></div>
       <div>
-        <h4>关于我</h4>
-        <p>YC</p>
-        <p>前端工程师</p>
+        <h4></h4>
+        <Link to="/about">关于我</Link>
       </div>
     </div>
   )
