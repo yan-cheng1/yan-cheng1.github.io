@@ -1,13 +1,17 @@
 import React, { FC } from 'react'
 import { UserOutlined } from '@ant-design/icons'
-import { Avatar, Space } from 'antd'
-import style from './sider.scss'
+
+import style from './sider.module.scss'
 
 const Sider: FC = () => {
   return (
     <div className={style.sider_bar}>
-      <Avatar size={64} icon={<UserOutlined />} />
-      <div className={style.user_name}>颜成</div>
+      <div className="user_avator"></div>
+      <div>
+        <h4>关于我</h4>
+        <p>YC</p>
+        <p>前端工程师</p>
+      </div>
     </div>
   )
 }

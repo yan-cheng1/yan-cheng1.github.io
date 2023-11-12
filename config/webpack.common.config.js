@@ -12,6 +12,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|gif|jpg|jpeg|svg|woff|ttf|eot)$/i,
+        type: 'asset'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          }
+        ]
+      },
+      {
         test: /\.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader,
