@@ -18,5 +18,13 @@
     h4 {
       @apply text-3xl;
     }
+    a {
+      margin: 20px 0;
+      color: $primaryColor;
+
+      &:hover {
+        color: $primaryLightColor;
+      }
+    }
   }
 }

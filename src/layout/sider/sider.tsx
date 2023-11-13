@@ -9,8 +9,8 @@ const Sider: FC = () => {
     <div className={style.sider_bar}>
       <div className="user_avator"></div>
       <div>
-        <h4></h4>
-        <Link to="/about">关于我</Link>
+        <Link to="blog">Blog</Link>
+        <Link to="about">关于我</Link>
       </div>
     </div>
   )

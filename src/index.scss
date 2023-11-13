@@ -10,4 +10,19 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  color: #fff;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    color: rgb(0, 255, 0);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

@@ -43,6 +43,14 @@ module.exports = {
 
           {
             loader: 'sass-loader'
+          },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [
+                path.resolve(__dirname, '../src/styles/common.scss') // 引入全局 SasS 变量的文件（对应你全局文件的路径）
+              ]
+            }
           }
         ]
       },

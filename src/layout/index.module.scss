@@ -1,9 +1,30 @@
+@import '@/styles/common.scss';
+
 .layout_page {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url('../assets/images/bgimage.jpeg');
   background-position: 50% 50%;
   background-size: cover;
   z-index: 0;
+}
+
+.layout_content {
+  width: 100%;
+  max-height: calc(100vh - 40px);
+  margin: 20px;
+  overflow-y: scroll;
+  border-radius: 20px;
+  background-color: rgba($color: #fff, $alpha: 0.4);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:hover {
+    border-radius: 20px 5px 5px 20px;
+    &::-webkit-scrollbar {
+      display: block;
+    }
+  }
+  @include scroll_box;
 }
