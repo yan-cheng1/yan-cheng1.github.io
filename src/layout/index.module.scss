@@ -20,11 +20,11 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  &:hover {
-    border-radius: 20px 5px 5px 20px;
-    &::-webkit-scrollbar {
-      display: block;
-    }
-  }
-  @include scroll_box;
+  // &:hover {
+  //   border-radius: 20px 5px 5px 20px;
+  //   &::-webkit-scrollbar {
+  //     display: block;
+  //   }
+  // }
+  // @include scroll_box;
 }

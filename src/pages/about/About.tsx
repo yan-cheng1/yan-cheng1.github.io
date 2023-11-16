@@ -4,8 +4,7 @@ import style from './About.scss'
 const About: FC = () => {
   return (
     <div className={style.about_page}>
-      <p>YC</p>
-      <p>前端工程师</p>
+      <p>一个来自四川的前端开发bboxer</p>
     </div>
   )
 }

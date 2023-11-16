@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import MineSider from './sider/sider'
-import Home from '@/pages/home/Home'
+import Blog from '@/pages/blog/Blog'
 import About from '@/pages/about/About'
 
 import style from './index.module.scss'
@@ -15,6 +15,7 @@ const Layout: React.FC = () => (
     <div className={style.layout_content}>
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   </div>
